@@ -97,3 +97,7 @@ function decipher(str){
 ```
 
 
+## Diagrama de flujos
+
+
+ https://github.com/gvillablanca/Producto-Final-codificador/blob/master/Codificador.jpeg
