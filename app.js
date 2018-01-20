@@ -2,7 +2,7 @@ function main() {
   do {
     var answer = prompt('Desea: \n\ 1:Codificar \n\ 2:Decodificar'); //  primero pregunto que es lo que quiere hacer el usuario
     if (answer !== '') {
-      if (answer === 1 || answer === 2) {
+      if (answer === '1' || answer === '2') {
         var string = phrase(); //  valor que se obtiene de la funcion phrase
         if (answer === '1') { //  si su opcion es 1 accedemos a la funcion cipher
           return document.write(cipher(string));
@@ -19,7 +19,7 @@ function main() {
 function phrase() {
   do {
     var phraseAnswer = prompt('Ingrese su frase');
-  } while (phraseAnswer === '' || containsNum(phraseAnswer) === true || isNaN(phraseAnswer) === false); //  condicion para detener la funcion
+  } while (phraseAnswer === '' || isNaN(phraseAnswer) === false); //  condicion para detener la funcion
   return phraseAnswer; //  el valor de esta frase se guarda en string de la funcion main y sera el valor que entrara a las funciones cipher y decipher
 }
 
